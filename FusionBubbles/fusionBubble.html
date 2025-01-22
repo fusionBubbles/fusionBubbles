@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Bubbles - Your Favorite Bubble Tea</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        #about-us, #loyalty-card, #opening-hours, #contact{
+            font-size: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8c94, #ffb6c1);
+            color: white;
+            text-align: center;
+            padding: 2.5em 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-family: 'Brush Script MT', cursive;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.4em;
+            margin: 1em 0 0.5em;
+            font-weight: 300;
+            line-height: 1.6em;
+        }
+
+        .header-buttons {
+            margin-top: 1.5em;
+        }
+
+        .header-buttons a {
+            background-color: white;
+            color: #ff8c94;
+            text-decoration: none;
+            padding: 0.8em 1.5em;
+            border-radius: 25px;
+            font-weight: bold;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .header-buttons a:hover {
+            background-color: #ff8c94;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffb6c1;
+            padding: 0.7em 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3em 1em;
+            background: url('bubble-tea-hero.jpg') no-repeat center/cover;
+            color: black;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h2 {
+            font-size: 2.6em;
+            margin: 0.5em 0;
+            color: #666;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding: 2em 1em;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .menu {
+            margin-top: 2em;
+        }
+
+        .menu-category {
+            margin-bottom: 2em;
+            margin-left: 0.3cm;
+            margin-right: 0.3cm;
+        }
+
+        .menu-category h3 {
+            font-size: 1.8em;
+            color: #ff8c94;
+        }
+
+        .menu-category2 {
+            margin-bottom: 2em;
+        }
+
+        .menu-category2 h3 {
+            font-size: 1.8em;
+            color: #ff8c94;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .menu-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .menu-item h4 {
+            font-size: 1.2em;
+            margin: 0.5em 0;
+        }
+
+        .menu-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        .loyalty {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.5em;
+            padding: 2em 0;
+            background-color: #fff4f6;
+            border-radius: 10px;
+        }
+
+        .loyalty img {
+            flex: 1 1 300px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .loyalty div {
+            flex: 2 1 400px;
+        }
+
+        .loyalty h3 {
+            font-size: 1.8em;
+            color: #ff8c94;
+        }
+
+        footer {
+            background-color: #ff8c94;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        #phcarta {
+            height: 200px;
+
+        }
+
+        #logo{
+            width: 370px;
+            height: 370px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/FusionBubbles/Images/Images/logobubblestea.png" id="logo" alt="LOGO" loading="lazy">
+        <h1>Fusion bubbles</h1>
+        <p>Your go-to destination for delicious, refreshing, and delightful Bubble Tea creations.</p>
+        <p>Whether you're craving something classic or adventurous, we've got a flavor just for you!</p>
+        <div class="header-buttons">
+            <a href="#menu">Discover Our Menu</a>
+            <a href="#loyalty-card">Join Loyalty Program</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about-us">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#loyalty-card">Loyalty Card</a>
+        <a href="#opening-hours">Opening hours</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Discover the unique taste of our Bubble Tea</h2>
+        <p>Come and discover a world of unique and creative flavors! At Fusion Bubbles, every sip of bubble tea is a
+            special experience, made with passion and fresh ingredients. We’re waiting for you to make every moment
+            unforgettable!</p>
+    </section>
+
+    <section id="about-us" class="section">
+        <h2>About Us</h2>
+        <p>Fusion Bubbles is born from the union of two simple yet creative meanings. On one hand, it represents the
+            fusion of our names – Federica, Jennifer, Denis, and Alessio – four friends sharing a common passion for
+            good food and fresh ideas. On the other hand, it celebrates the true essence of our shop: a fusion of
+            flavors, cultures, and creativity in every bubble tea we prepare. It’s a name that tells our story, our
+            friendship, and our desire to offer a special experience to anyone who wants to try it.</p>
+    </section>
+
+    <section id="menu" class="section menu">
+        <h2>Menu</h2>
+
+        <div class="menu-category">
+            <h3>Flavor of the Week</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/cioccopera.png" alt="Flavor of the Week" loading="lazy">
+                    <h4>Cocoa pear</h4>
+                    <p>An irresistible bubble tea with pear and chocolate flavor, offering a fresh and sweet mix in
+                        every sip!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Flavors of the season</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/aranciacannella.png" alt="Strawberry Tea" loading="lazy">
+                    <h4>Orange Cinnamon</h4>
+                    <p>The Bubble Tea that combines the sweet aroma of orange with the spicy cinnamon, for a fresh and
+                        enveloping taste.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/darkcherry.png" alt="Peach Tea" loading="lazy">
+                    <h4>Dark cherry</h4>
+                    <p>This bubble tea is a perfect mix of fresh tea and the sweet taste of cherry, enriched with
+                        tapioca pearls. A fresh and tasty experience!</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/mintcocoa.png" alt="Strawberry Tea" loading="lazy">
+                    <h4>Mint Cocoa</h4>
+                    <p>The bubble tea that combines the freshness of mint with the sweetness of chocolate, for a
+                        refreshing and delicious experience!</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/chenust.png" alt="Strawberry Tea" loading="lazy">
+                    <h4>Chestnut</h4>
+                    <p>The bubble tea that combines the sweet and comforting flavor of chestnut with the freshness of
+                        tea, creating a unique and delicious drink!</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/mandarinecocoa.png" alt="Strawberry Tea" loading="lazy">
+                    <h4>Mandarine white chocolate</h4>
+                    <p>A fresh bubble tea with mandarin and the sweetness of white chocolate. A unique and irresistible
+                        taste!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category2">
+            <h3>Fixed flavors</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/mojito.png" alt="Classic Bubble Tea" loading="lazy"> 
+                    <h4>Mojito</h4>
+                    <p>A fresh and refreshing mojito bubble tea, with mint, lime, and tapioca pearls for a unique and
+                        thirst-quenching experience!</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/pistacio.png" alt="Matcha Bubble Tea" loading="lazy">
+                    <h4>Pistachio</h4>
+                    <p>The pistachio bubble tea combines the creamy taste of pistachio with fresh tea and tapioca
+                        pearls, for a unique and delicious drink.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/marshhellow.png" alt="Fruit Bubble Tea" loading="lazy">
+                    <h4>Marshmallow</h4>
+                    <p>A sweet drink with a captivating marshmallow flavor that makes every sip delicious and irresistible.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/rosa e zafferano.png" alt="Fruit Bubble Tea" loading="lazy">
+                    <h4>Rose saffron</h4>
+                    <p>An elegant bubble tea, with the floral scent of rose and the warm touch of saffron, for a unique and refined taste.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>Other</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/creps.png" alt="Classic Bubble Tea" loading="lazy">
+                    <h4>Creps</h4>
+                    <p>Soft and light crepes with Nutella, pistachio, chocolate, and jam, perfect for any time of the
+                        day!</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/brownie.png" alt="Matcha Bubble Tea" loading="lazy">
+                    <h4>Chocolate Brownie</h4>
+                    <p> A soft and gooey dessert, with rich chocolate and a melting center that melts in your mouth.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/pancake.png" alt="Fruit Bubble Tea" loading="lazy">
+                    <h4>Pancake</h4>
+                    <p>A soft pancakes served with a variety of sauces, ideal for a sweet breakfast or snack.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/egg&bacon.png" alt="Fruit Bubble Tea" loading="lazy">
+                    <h4>Eggs and bacon</h4>
+                    <p>A hearty and savory dish with fresh eggs and crispy bacon, perfect for a substantial breakfast.
+                    </p>
+                </div>
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/bagle.png" alt="Fruit Bubble Tea" loading="lazy">
+                    <h4>Stuffed bagels</h4>
+                    <p>A soft and savory bagel, filled with fresh and tasty ingredients for a quick and delicious meal.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3>For the little ones...</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="/FusionBubbles/Images/Images/box.png" alt="Flavor of the Week" loading="lazy">
+                    <h4>Fusion box</h4>
+                    <p> For the little ones, our shop offers a special box that includes a mini bubble tea, a delicious
+                        treat, and a fun game. A complete experience that will make children happy while they have fun
+                        and enjoy something tasty!​</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="loyalty-card" class="section">
+        <div class="loyalty">
+            <img src="/FusionBubbles/Images/Images/1.png" id="phcarta" alt="Loyalty Card" loading="lazy">
+            <div>
+                <h3>Our Loyalty Card</h3>
+                <p>Our shop offers a loyalty program with which our customers can gain points which grant them access to exclusive offers. With our loyalty program our customers receive a card which is digital and linked to them by their phone number.
+                    Every time our customers buy a drink, they get points based on the size of their drink:
+                    <br>
+                    -30 pts for a mini
+                    <br>
+                    -40 pts for a medium
+                    <br>
+                    -50 pts for a maxi
+                    </p>
+                <p>Request your loyalty card today at our store.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="opening-hours" class="section">
+        <h2>Opening Hours</h2>
+        <p>We can't wait to serve you your favorite Bubble Tea! Here's when we're open:</p>
+        <ul>
+            <li><strong>Tuesday to Friday:</strong> 9:30 AM - 19:00 PM</li>
+            <li><strong>Saturday and Sunday:</strong> 10:00 AM - 20:00 PM</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Come visit us or contact us to book your favorite Bubble Tea:</p>
+        <ul>
+            <li>Address: Via Roma, 56, Pordenone (PN)</li>
+            <li>Phone: +39 3976479873</li>
+            <li>Email: fusion.bubbles.tea@gmail.com</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fusion bubbles. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
